@@ -9,6 +9,7 @@ This project aims to predict employee absenteeism using machine learning and vis
 - `Part3.ipynb` — Module creation for prediction (Part 3)
 - `Part4.ipynb` — SQL integration and automation (Part 4)
 - `Part5.twb` — Tableau dashboard (Part 5)
+- `Part6.pbix` — PowerBI dashboard (Part 6)
 - `absenteeism_module.py` — Custom Python module for prediction
 - `Absenteeism-data.csv` — Raw data
 - `Absenteeism_preprocessed.csv` — Preprocessed data
@@ -44,8 +45,8 @@ This project aims to predict employee absenteeism using machine learning and vis
 - Connects to a MySQL database and creates a table for predictions.
 - Inserts prediction results into the database for further analysis.
 
-### 5. Visualization (Part5.twb)
-- Tableau dashboard connects to `Absenteeism_predictions.csv`.
+### 5. Visualization (Part5.twb and Part6.pbix)
+- Tableau and PowerBI dashboards connects to `Absenteeism_predictions.csv`.
 - Provides interactive visualizations such as:
   - Age vs Probability of Absenteeism
   - Reasons vs Probability
@@ -56,19 +57,24 @@ This project aims to predict employee absenteeism using machine learning and vis
 - Python 3.x
 - pandas, numpy, scikit-learn, pymysql
 - MySQL server (for database integration)
-- Tableau Desktop (for dashboard)
+- Tableau and Power BI Desktops (for dashboard)
 
 ### Steps
-1. **Data Preparation**: Run Part1 to clean and preprocess the raw data.
-2. **Model Training**: Run Part2 to train and save the model and scaler.
-3. **Module and Prediction**: Run Part3 to use the module for predictions on new data.
-4. **Database Integration**: Run Part4 to insert predictions into MySQL using the provided SQL script.
-5. **Visualization**: Open Part5.twb in Tableau Desktop and connect to `Absenteeism_predictions.csv` for interactive analysis.
+1. **Data Preparation**: Run `Part1` to clean and preprocess the raw data.
+2. **Model Training**: Run `Part2` to train and save the model and scaler.
+3. **Module and Prediction**: Run `Part3` to use the module for predictions on new data.
+4. **Database Integration**: Run `Part4` to insert predictions into MySQL using the provided SQL script.
+5. **Visualization**: Open `Part5` in Tableau Desktop and `Part6` in PowerBI Desktop and connect to `Absenteeism_predictions.csv` for interactive analysis.
 
 ## Tableau Dashboard
 - Open `Part5.twb` in Tableau Desktop.
 - Ensure `Absenteeism_predictions.csv` is in the expected directory.
 - Explore the provided worksheets for insights into absenteeism patterns.
 
+## PowerBI Dashboard
+- Open `Part6.pbix` in PowerBI Desktop.
+- Ensure `Absenteeism_predictions.csv` is located in the same directory or correctly linked in the data source settings.
+- Review the visuals and filters to analyze patterns and trends in employee absenteeism.
+
 ## Credits
-Developed as a comprehensive workflow for absenteeism prediction and visualization, integrating Python, SQL, and Tableau. 
+Developed as a comprehensive workflow for absenteeism prediction and visualization, integrating Python, SQL, Tableau, and PowerBI.
